@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+  <title>Timer & RegExp приклади</title>
+</head>
+
+<body>
+  <section class="timer">
+    <h2 class="timer__title">До кінця акції залишилося:</h2>
+    <div class="container">
+      <div class="cell"> <span>Днів</span> <span class="cell__data" id="day">0</span></div>
+      <div class="cell"> <span>Годин</span> <span class="cell__data" id="hour">0</span></div>
+      <div class="cell"> <span>Хвилин</span> <span class="cell__data" id="min">0</span></div>
+      <div class="cell"> <span>Секунд</span> <span class="cell__data" id="sec">0</span></div>
+    </div>
+    <a class="timer__button" target="_blank"
+      href="https://allo.ua/ru/products/mobile/apple-iphone-13-128gb-black.html">Купити за акційною ціною!</a>
+  </section>
+
+  <section class="stiker">
+    <h2 class="stiker__title">Для замовлення наліпок заповніть форму</h2>
+    <form class="stiker__form" action="#">
+      <label>
+        Ім'я:
+        <input type="text" placeholder="Ім'я">
+      </label>
+      <label>
+        Призвіще:
+        <input type="text" placeholder="Призвіще">
+      </label>
+      <label>
+        Електронна пошта:
+        <input type="email" placeholder="example@email.com">
+      </label>
+      <label>
+        Зображення:
+        <input type="file">
+      </label>
+      <div class="format__field-container">
+        <div class="format__tooltip">Невірний формат! <a class="format__tooltip__link" target="_blank"
+            href="https://uk.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%D1%82_%D0%BF%D0%B0%D0%BF%D0%B5%D1%80%D1%83">Дізнатись
+            про формати</a></div>
+        <label>Введіть формат аркушу:
+          <input type="text" id="format" placeholder="А4 наприклад...">
+        </label>
+      </div>
+      <div class="stiker__form--btns">
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+      </div>
+
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- const day = Math.floor(t / 86400000)
+const hour = Math.floor((t - day * 86400000) / 3600000)
+const min = Math.floor((t - (day * 86400000 + hour * 3600000)) / 60000)
+const sec = Math.floor(
+  (t - (day * 86400000 + hour * 3600000 + min * 60000)) / 1000
+) -->
